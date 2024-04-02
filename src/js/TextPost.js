@@ -113,7 +113,7 @@ export default class TextPost {
   }
 
   checkValidity(string) {
-    return string.match(/^\[?\d+\.\d+,\s?\-?\d+\.\d+\]?$/gm);
+    return string.match(/([-+]?\d+\.\d+),\s*([-+]?\d+\.\d+)/);
   }
 
   hideModal() {
